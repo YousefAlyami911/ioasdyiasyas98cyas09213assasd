@@ -4,6 +4,7 @@ import youtube_dl
 import os
 from discord.ext import commands
 from discord.ext.commands import Bot
+client.user.setGame(`Just Be Yourself :)`,"http://twitch.tv/S-F")
 
 
 bot=commands.Bot(command_prefix='y')
