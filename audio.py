@@ -6,7 +6,6 @@ from discord.ext import commands
 from discord.ext.commands import Bot
 
 bot=commands.Bot(command_prefix='y')
-client.on('message', async msg => { 
 	if (msg.author.bot) return undefined;
     if (!msg.content.startsWith(prefix)) return undefined;
     
