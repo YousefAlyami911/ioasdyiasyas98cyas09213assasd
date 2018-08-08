@@ -77,17 +77,6 @@ async def stop(ctx):
     server=ctx.message.server
     voice_client=bot.voice_client_in(server)
     await voice_client.disconnect()
-client.on('message', message => {
-  if (!message.content.startsWith(prefix)) return;
-  const verifed = ["329171984124739585"];
-if (message.content.startsWith(prefix + 'ownerbot')) {
-    if(!message.channel.guild) return;
-if( verifed.some(word => message.author.id.includes(word)) ) {    return message.channel.sendMessage("**انت صاحب البوت **")
-} else {
-   message.reply("**انت لسا صاحب البوت**");   
-}
-}
-});
 
 
 bot.run(os.environ['BOT_TOKEN'])
